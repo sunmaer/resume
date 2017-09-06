@@ -223,15 +223,15 @@ body {
 }
 .classify-web {
 	color: #cc0033;
-	background-image: url(../img/web.png);
+	background-image: url(../img/Web.png);
 }
 .classify-java {
 	color: #006699;
-	background-image: url(../img/java.png);
+	background-image: url(../img/Java.png);
 }
 .classify-android {
 	color: #006633;
-	background-image: url(../img/android.png);
+	background-image: url(../img/Android.png);
 }
 .classify .classify-title {
     font-size: 32px;
