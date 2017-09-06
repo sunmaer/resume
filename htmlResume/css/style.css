@@ -1,0 +1,308 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors sunmaer (you@example.org)
+ * @date    2016-08-09 16:05:07
+ * @version $Id$
+ */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+    color: #fff;
+}
+/*----------------------------首页--------------------------*/
+.container-fluid video {
+	position: absolute;
+	z-index: -2;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background: rgba(0, 0, 0, 0) url("../imgs/replace.jpg") no-repeat scroll center center / cover ;
+}
+.mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+}
+.mynavbar {
+	width: 100%;
+	height: 60px;
+}
+.mynavbar ul{
+	list-style: none;
+	padding: 0;
+	width: 100%; 
+}
+.mynavbar ul li:first-child {
+	margin-left: 25%;
+}
+.mynavbar ul li {
+	float: left;
+	line-height: 60px;
+	width: 10%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: transparent;
+}
+.mynavbar ul li a {
+	outline: none;
+	font-size: 17px;
+	color: #fff;
+	text-decoration: none;
+}
+.banner {
+	position: absolute;
+	width: 100%;
+	bottom: 80px;
+	clear: both;
+	margin: 0;
+	/*background-color: red;*/
+}
+.banner p {
+	text-align: center;
+	line-height: 60px;
+	font-size: 32px;
+	font-weight: 100;
+	letter-spacing: 5px;
+}
+.banner a {
+	display: block;
+	width: 120px;
+	margin: 100px auto 0;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 5px 20px;
+	background-color: transparent;
+}
+
+/*----------------------------关于我--------------------------*/
+.wrapper {
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 1000px;
+	padding: 50px 20px;
+	color: #000;
+}
+.bg-about {
+	background-color: #f1f1f1;
+}
+.photo {
+	position: relative;
+	overflow: hidden;
+}
+.photo img {
+	float: left;
+	width: 200px;
+	border: 4px solid #fff;
+	border-radius: 50%;
+}
+.info {
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 80px 20px 0 20px;
+	width: calc(100% - 200px);
+}
+.photo h2 {
+	color: #000;
+}
+.photo hr {
+	width: 100%;
+	height: 2px;
+	background-color: #ddd;
+}
+#about .content {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-left: 230px;
+}
+.title {
+	margin-bottom: 30px;
+	height: 35px;
+	line-height: 35px;
+}
+.title:before {
+	position: absolute;
+	content: " ";
+	display: inline-block;
+	width: 3px;
+	height: 35px;
+	background-color: #64b5ed;
+}
+#about .content ul {
+	overflow: hidden;
+	color: #00b33b;
+	font-size: 16px;
+	list-style-type: none;
+}
+#about .content ul li {
+	float: left;
+	width: calc(100% / 2);
+	height: 50px;
+}
+#about .content ul li p {
+	position: relative;
+	display: inline-block;
+	padding: 0 2px 10px;
+	border-bottom: 1px solid #ddd;
+}
+#about .content ul li p .item {
+	display: inline-block;
+	margin-right: 20px;
+	width: 100px;
+}
+#about .content ul li p .line {
+	position: absolute;
+	left: 80px;
+	display: inline-block;
+	width: 1px;
+	height: 20px;
+	background-color: #ddd;
+}
+/*----------------------------专业技能--------------------------*/
+.bg-skills {
+	background-color: #fff;
+}
+#skills q {
+	display: block;
+	width: 70%;
+	margin: 0 auto 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+	color: #5bc0de;
+}
+#skills .item {
+	margin-bottom: 20px;
+	padding: 0 50px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+#skills .item .type {
+	display: inline-block;
+	float: left;
+	width: 150px;
+	font-size: 18px;
+}
+#skills .progress {
+	position: relative;
+	top: 5px;
+}
+/*----------------------------社会经历--------------------------*/
+.bg-experience {
+	background-color: #f1f1f1;
+}
+#experience q {
+	display: block;
+	width: 70%;
+	margin: 0 auto 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+	color: #00b33b;
+}
+/*----------------------------求职意向--------------------------*/
+.classify {
+	overflow: hidden;
+	width: 224px;
+	height: 300px;
+	margin: 0 auto;
+}
+.classify-web {
+	color: #cc0033;
+	background-image: url(../img/web.png);
+}
+.classify-java {
+	color: #006699;
+	background-image: url(../img/java.png);
+}
+.classify-android {
+	color: #006633;
+	background-image: url(../img/android.png);
+}
+.classify .classify-title {
+    font-size: 32px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 28px;
+    margin-bottom: 55px;
+}
+#dream q {
+	display: block;
+	width: 70%;
+	margin: 50px auto;
+	line-height: 40px;
+	font-size: 25px;
+	text-align: center;
+	color: #000;
+}
+.classify p {
+    margin-left: 20px;
+    margin-top: 24px;
+}
+.classify .classify-item {
+	margin-left: 30px;
+	margin-top: 0px;
+	line-height: 20px;
+}
+.row-company {
+	margin: 50px 0 0;
+}
+.row-company img {
+	display: block;
+	width: 60px;
+	margin: 0 auto;
+}
+.row-company p {
+	height: 50px;
+	line-height: 50px;
+	color: #333;
+	text-align: center;
+}
+/*----------------------------页脚--------------------------*/
+footer {
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 1000px;
+	border-top: 1px solid #d0d6d9;
+}
+footer p {
+	margin: 0;
+	height: 75px;
+	line-height: 75px;
+	text-align: center;
+	color: #b4bbbf;
+}
+
+/*没有小于768px，是因为Bootstrap3以移动端优先设计*/
+
+/* 小屏幕（平板，大于等于768px） */
+@media (min-width: 768px) {
+    
+}
+
+/* 中等屏幕（桌面显示器，大于等于992px） */
+@media (min-width: 992px) {
+    
+}
+
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+@media (min-width: 1200px) {
+    
+}
